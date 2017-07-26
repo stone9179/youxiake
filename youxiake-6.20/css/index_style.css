@@ -1,0 +1,577 @@
+body {
+  overflow-x: hidden;
+}
+.ad-top {
+  width: 100%;
+  height: 2.34375rem;
+  overflow: hidden;
+}
+.ad-top a {
+  display: block;
+  height: 1.875rem;
+  width: 100%;
+  background: #ffe109;
+  margin-top: 0.46875rem;
+  position: relative;
+}
+.ad-top a img {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: -0.3125rem;
+  left: 0.3125rem;
+}
+.ad-top a span {
+  display: block;
+  height: 1.875rem;
+  width: 4.6875rem;
+  font-size: 0.4375rem;
+  position: absolute;
+  top: 0;
+  left: 3.125rem;
+  padding-top: 0.46875rem;
+  box-sizing: border-box;
+}
+.ad-top a span em {
+  display: block;
+  height: 0.625rem;
+  color: #fff;
+  width: 100%;
+}
+.ad-top a i {
+  display: block;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  background: url(../img/app-x.png) no-repeat;
+  background-size: 0.9375rem auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lunbotu {
+  width: 100%;
+  height: 5.3125rem;
+}
+.lunbotu .carousel {
+  width: 100%;
+  height: 5.3125rem;
+  position: relative;
+  overflow: hidden;
+}
+.lunbotu .carousel .picture {
+  height: 5.3125rem;
+  position: absolute;
+  width: 60rem;
+}
+.lunbotu .carousel .picture li {
+  width: 10rem;
+  height: 5.3125rem;
+  float: left;
+}
+.lunbotu .carousel .picture li a {
+  display: block;
+  width: 10rem;
+  height: 5.3125rem;
+}
+.lunbotu .carousel .picture li a img {
+  display: block;
+  width: 10rem;
+}
+.lunbotu .carousel .nav-bot {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 3.59375rem;
+  height: 0.3125rem;
+  width: 3.4375rem;
+}
+.lunbotu .carousel .nav-bot li {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 50%;
+  float: left;
+  background: rgba(255, 255, 255, 0.36);
+}
+.lunbotu .carousel .nav-bot li + li {
+  margin-left: 0.3125rem;
+}
+.lunbotu .carousel .search {
+  width: 5.3125rem;
+  height: 0.9375rem;
+  border: 1px solid #fff;
+  border-radius: 0.15625rem;
+  position: absolute;
+  top: 0.3125rem;
+  left: 2.34375rem;
+  font-size: 0;
+}
+.lunbotu .carousel .search s {
+  display: inline-block;
+  font-size: 0.375rem;
+  height: 0.625rem;
+  width: 0.625rem;
+  margin-top: 0.15625rem;
+  background: url(../img/clear.png) no-repeat;
+  background-size: 0.625rem auto;
+  vertical-align: top;
+  display: none;
+}
+.lunbotu .carousel .search input {
+  display: inline-block;
+  font-size: 0.4375rem;
+  color: #666;
+  border: none;
+  height: 0.8125rem;
+  vertical-align: top;
+  margin-top: 0.0625rem;
+  outline: none;
+}
+.lunbotu .carousel .search input[type=text] {
+  width: 3.75rem;
+  text-indent: 0.15625rem;
+  background: transparent;
+}
+.lunbotu .carousel .search input[type=button] {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  background: url(../img/iconfont-search2.png) no-repeat;
+  background-size: 0.8125rem auto;
+  float: right;
+}
+.lunbotu .carousel #list {
+  position: absolute;
+  top: 1.25rem;
+  left: 2.34375rem;
+  font-size: 0.375rem;
+  width: 5.3125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+  text-indent: 0.15625rem;
+}
+.lunbotu .carousel .home {
+  display: block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+}
+.lunbotu .carousel .home img {
+  display: block;
+  width: 0.9375rem;
+}
+.active {
+  background: #fff !important;
+}
+nav {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+nav ul {
+  width: 100%;
+  overflow: hidden;
+}
+nav ul li {
+  width: 25%;
+  float: left;
+  height: 2.8125rem;
+  padding: 0.3125rem;
+  box-sizing: border-box;
+}
+nav ul li a {
+  display: block;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin: 0 auto;
+}
+nav ul li a img {
+  display: block;
+  width: 1.5625rem;
+}
+nav ul li em {
+  display: block;
+  width: 100%;
+  height: 0.46875rem;
+  line-height: 0.46875rem;
+  text-align: center;
+  margin-top: 0.15625rem;
+  font-size: 0.375rem;
+}
+.activity {
+  height: 1.25rem;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.activity ul {
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+}
+.activity ul li {
+  width: 100%;
+  height: 1.25rem;
+}
+.activity ul li a {
+  float: left;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 0.375rem;
+  color: #000;
+  text-indent: 0.3125rem;
+}
+.activity ul li a img {
+  display: block;
+  height: 1.25rem;
+  margin-left: 0.46875rem;
+}
+.tuijian {
+  width: 100%;
+  height: 3.125rem;
+  margin-top: 0.3125rem;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+.tuijian .head {
+  height: 1.25rem;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.25rem;
+  font-size: 0.5rem;
+}
+.tuijian .head i {
+  display: inline-block;
+  height: 0.625rem;
+  width: 0.09375rem;
+  background-color: #fac000;
+  margin: 0.3125rem 0.46875rem;
+  vertical-align: top;
+}
+.tuijian .bottom {
+  height: 1.84375rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.tuijian .bottom ul {
+  width: 26.25rem;
+  height: 1.84375rem;
+  position: absolute;
+}
+.tuijian .bottom ul li {
+  height: 1.84375rem;
+  float: left;
+  padding: 0 0.46875rem;
+  text-align: center;
+  font-size: 0.4375rem;
+}
+.tuijian .bottom ul li a {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 50%;
+  background: #e2e2e2;
+  margin-top: 0.3125rem;
+}
+.seeing {
+  width: 100%;
+  height: 5.625rem;
+  margin-top: 0.3125rem;
+  overflow: hidden;
+  background: #fff;
+}
+.seeing img {
+  float: left;
+  width: 33.3%;
+}
+.head {
+  width: 100%;
+  height: 1.5625rem;
+  background: #f6f6f6;
+}
+.head span {
+  display: block;
+  width: 3.75rem;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  font-size: 0.4375rem;
+  margin: 0 auto;
+  position: relative;
+}
+.head span u {
+  display: inline-block;
+  width: 0.625rem;
+  height: 1.5625rem;
+  vertical-align: top;
+  margin: 0 0.1875rem;
+}
+.head span u img {
+  display: block;
+  width: 0.625rem;
+  margin-top: 0.46875rem;
+}
+.head span:before {
+  content: "";
+  display: block;
+  width: 2.1875rem;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 0.78125rem;
+  left: -2.1875rem;
+}
+.head span:after {
+  content: "";
+  display: block;
+  width: 2.1875rem;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 0.78125rem;
+  right: -2.1875rem;
+}
+.sticky {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+.sticky .top {
+  width: 100%;
+  height: 1.5625rem;
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+.sticky .top ul {
+  width: 9.375rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.sticky .top ul li {
+  width: 33.3%;
+  height: 1.5625rem;
+  float: left;
+  font-size: 0.5625rem;
+}
+.sticky .top ul li a {
+  margin-top: 0.3125rem;
+  display: block;
+  width: 100%;
+  height: 0.9375rem;
+  border-radius: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center;
+}
+.sticky .top ul li a:target .travel {
+  display: block;
+}
+.sticky .top ul li .chosed {
+  color: #fff;
+  background: #FBC000;
+}
+.sticky .navigate {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.sticky .navigate .travel {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0.3125rem 0.3125rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+.sticky .navigate .travel li {
+  float: left;
+  width: 20%;
+  height: 0.9375rem;
+  margin-top: 0.3125rem;
+  line-height: 0.9375rem;
+  font-size: 0.4375rem;
+  text-align: center;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.sticky .navigate .travel .hot {
+  background: #FFF3D1;
+  border: 1px solid #FBC000;
+  border-radius: 0.09375rem;
+}
+.sticky .navigate #travel2 {
+  display: none;
+}
+.sticky .navigate #travel3 {
+  display: none;
+}
+.chose {
+  width: 100%;
+  height: auto;
+}
+.chose .content {
+  width: 100%;
+  height: auto;
+}
+.chose .content ul {
+  width: 100%;
+  height: auto;
+}
+.chose .content ul li {
+  height: 7.5rem;
+  background: #fff;
+  width: 10rem;
+}
+.chose .content ul li .picture {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+}
+.chose .content ul li .picture img {
+  display: block;
+  width: 100%;
+}
+.chose .content ul li .picture span {
+  display: block;
+  height: 0.78125rem;
+  line-height: 0.78125rem;
+  width: 4.21875rem;
+  border-radius: 0.78125rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.375rem;
+  position: absolute;
+  top: 0.625rem;
+  left: 0.46875rem;
+}
+.chose .content ul li .picture span u {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.78125rem;
+  background: url(../img/icon-item2.png) no-repeat 0.0625rem center;
+  background-size: 0.375rem auto;
+  vertical-align: top;
+  margin: 0 0.0625rem 0 0.25rem;
+}
+.chose .content ul li .picture em {
+  display: block;
+  width: 2.34375rem;
+  height: 1.5625rem;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.46875rem;
+  background: #fff;
+}
+.chose .content ul li .picture em s {
+  display: block;
+  width: 100%;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center;
+  font-size: 0.375rem;
+  background: #FBC000;
+  color: #fff;
+}
+.chose .content ul li .picture em i {
+  display: block;
+  width: 100%;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  font-size: 0.375rem;
+  color: #FBC000;
+  text-align: center;
+}
+.chose .content ul li .discrible {
+  display: block;
+  width: 100%;
+  padding: 0.46875rem;
+  box-sizing: border-box;
+}
+.chose .content ul li .discrible em {
+  display: block;
+  height: 0.625rem;
+  width: 9.0625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.46875rem;
+}
+.chose .content ul li .discrible span {
+  display: block;
+  margin-top: 0.3125rem;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  font-size: 0.375rem;
+}
+.chose .content ul li .discrible span u {
+  display: inline-block;
+  vertical-align: top;
+  width: 1.875rem;
+  height: 0.625rem;
+  background: #F68B6E;
+  color: #fff;
+  border-radius: 0.0625rem;
+  text-align: center;
+}
+.chose .content ul li .discrible span i {
+  display: inline-block;
+  height: 0.625rem;
+  width: 6.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+}
+.chose .content #travel2-hot {
+  display: none;
+}
+.chose .content #travel3-hot {
+  display: none;
+}
+.chose .content .travel-none {
+  display: none;
+}
+.callphone {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0.6rem;
+  left: 0.3rem;
+  z-index: 200;
+}
+.callphone img {
+  display: block;
+  width: 100%;
+}
+.totop {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  right: 0.3rem;
+  z-index: 200;
+  bottom: 0.6rem;
+  display: none;
+}
+.totop em {
+  display: block;
+  height: 0.375rem;
+  width: 100%;
+  font-size: 0.375rem;
+  text-align: center;
+  color: #fff;
+}
+.totop i {
+  display: block;
+  height: 0.375rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.3125rem;
+  color: #fff;
+}

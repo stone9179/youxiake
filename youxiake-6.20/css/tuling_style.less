@@ -1,0 +1,132 @@
+@cr:32rem;
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    overflow: auto;
+    .head{
+        width: 100%;
+        height: 80/@cr;
+        background: #eee;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .name{
+            height: 30/@cr;
+            width: 100%;
+            text-align: center;
+            line-height: 30/@cr;
+            font-size: 16/@cr;
+        }
+        .touxiang{
+            height: 50/@cr;
+            width: 50/@cr;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0/@cr auto;
+            img{
+                display: block;
+                width: 50/@cr;
+                height: 50/@cr;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    .talking{
+        padding: 80/@cr 0 10/@cr;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        min-height: calc(100%-180/@cr);
+        overflow: hidden;
+        .tuling{
+            width: 100%;
+            height: auto;
+            margin-top: 10/@cr;
+            label{
+                display: block;
+                height: 30/@cr;
+                width: 100%;
+                line-height: 30/@cr;
+                font-size: 16/@cr;
+                padding: 0 5/@cr;
+                box-sizing: border-box;
+                img{
+                    display: inline-block;
+                    width: 30/@cr;
+                    height: 30/@cr;
+                    border-radius: 50%;
+                    margin:0 5/@cr;
+                    vertical-align: middle;
+                }
+            }
+            p{
+                height: auto;
+                width: 60%;
+                margin-left: 25/@cr;
+                line-height: 25/@cr;
+                font-size: 15/@cr;
+                text-align: justify;
+                word-break: break-word;
+            }
+        }
+        .me{
+            width: 100%;
+            height: over;
+            overflow: hidden;
+            margin-top: 10/@cr;
+            label{
+                display: block;
+                height: 30/@cr;
+                width: 100%;
+                line-height: 30/@cr;
+                font-size: 16/@cr;
+                text-align: right;
+                padding: 0 5/@cr;
+                box-sizing: border-box;
+                img{
+                    display: inline-block;
+                    width: 30/@cr;
+                    height: 30/@cr;
+                    border-radius: 50%;
+                    margin:0 5/@cr;
+                    vertical-align: middle;
+                }
+            }
+            p{
+                float: right;
+                height: auto;
+                width: 60%;
+                margin-right: 30/@cr;
+                line-height: 25/@cr;
+                font-size: 15/@cr;
+                text-align: justify;
+                word-break: break-word;
+                text-align: right;
+            }
+        }
+    }
+    
+    .shuru{
+        height: 30/@cr;
+        width: 320/@cr;
+        font-size: 0;
+        input{
+            font-size: 14/@cr;
+            vertical-align: top;
+            height: 30/@cr;
+            border: 1px solid #999;
+            box-sizing: border-box;       
+        }
+        input[type=text]{
+            width: 280/@cr;
+            text-indent: 5/@cr;
+        }
+        input[type=button]{
+            width: 40/@cr;
+        }
+    }
+}

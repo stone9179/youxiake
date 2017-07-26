@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>机器人对话</title>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/tuling_style.css" />-->
+		<script type="text/javascript">
+			(function() {
+				var html = document.documentElement;
+				var hwidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hwidth / 10 + 'px';
+			})();
+		</script>
+		<style type="text/css">
+			section {
+				width: 100%;
+				height: 100vh;
+				background: #fff;
+				overflow: auto;
+			}
+			
+			section .head {
+				width: 100%;
+				height: 1.35rem;
+				line-height: 1.35rem;
+				background: rgba(0,0,0,0.7);
+				overflow: hidden;
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+			
+			section .head .name {
+				height: 1.35rem;
+				width: 100%;
+				text-align: center;
+				line-height: 1.35rem;
+				font-size: 0.5rem;
+				color: #fff;
+				width: 1.5rem;
+				float: left;
+				margin-left: 0.2rem;
+				opacity: 0.7;
+			}
+			
+			section .head .touxiang {
+				height: 1.2rem;
+				width: 1.5rem;
+				text-align: center;
+				line-height: 1.2rem;
+				float: right;
+				margin-right: 0.2rem;
+				font-size: 0.5rem;
+				opacity: 0.7;
+			}
+			
+			section .head .touxiang a{
+				color: #fff;
+			}
+			
+			section .head .touxiang img {
+				display: block;
+				width: 1.5625rem;
+				height: 1.5625rem;
+				border-radius: 50%;
+			}
+			
+			section .talking {
+				padding: 1.35rem 0;
+				box-sizing: border-box;
+				width: 100%;
+				height: auto;
+				min-height: calc(94.375%);
+				overflow: hidden;
+			}
+			
+			section .talking .tuling {
+				width: 100%;
+				height: auto;
+				margin-top: 0.3125rem;
+			}
+			
+			section .talking .tuling label {
+				display: block;
+				height: 0.9375rem;
+				width: 100%;
+				line-height: 0.9375rem;
+				font-size: 0.5rem;
+				padding: 0 0.15625rem;
+				box-sizing: border-box;
+			}
+			
+			section .talking .tuling label img {
+				display: inline-block;
+				width: 0.9375rem;
+				height: 0.9375rem;
+				border-radius: 50%;
+				margin: 0 0.15625rem;
+				vertical-align: middle;
+			}
+			
+			section .talking .tuling p {
+				height: auto;
+				width: 60%;
+				margin-left: 0.78125rem;
+				line-height: 0.78125rem;
+				font-size: 0.46875rem;
+				text-align: justify;
+				word-break: break-word;
+				background: #ddd;
+				border-radius: 10px;
+				padding: 10px;
+			}
+			
+			section .talking .me {
+				width: 100%;
+				height: over;
+				overflow: hidden;
+				margin-top: 0.3125rem;
+			}
+			
+			section .talking .me label {
+				display: block;
+				height: 0.9375rem;
+				width: 100%;
+				line-height: 0.9375rem;
+				font-size: 0.5rem;
+				text-align: right;
+				padding: 0 0.15625rem;
+				box-sizing: border-box;
+			}
+			
+			section .talking .me label img {
+				display: inline-block;
+				width: 0.9375rem;
+				height: 0.9375rem;
+				border-radius: 50%;
+				margin: 0 0.15625rem;
+				vertical-align: middle;
+			}
+			
+			section .talking .me p {
+				float: right;
+				height: auto;
+				width: 60%;
+				margin-right: 0.9375rem;
+				line-height: 0.78125rem;
+				font-size: 0.46875rem;
+				text-align: justify;
+				word-break: break-word;
+				text-align: right;
+				background: #ddd;
+				border-radius: 10px;
+				padding: 10px;
+			}
+			
+			section .shuru {
+				height: 1.35rem;
+				width: 10rem;
+				font-size: 0;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+			
+			section .shuru input {
+				font-size: 0.4375rem;
+				vertical-align: top;
+				height: 1.35rem;
+				border: 1px solid #999;
+				box-sizing: border-box;
+			}
+			
+			section .shuru input[type=text] {
+				width: 8.5rem;
+				text-indent: 0.15625rem;
+			}
+			
+			section .shuru input[type=button] {
+				width: 1.5rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="talk">
+			<div class="head">
+				<div class="name">侠客</div>
+				<div class="touxiang">
+					<a href="index.html">退出</a>
+				</div>
+			</div>
+			<div class="talking">
+				<div class="tuling">
+					<label><img src="img/app.png"/>侠客 :</label>
+					<p>hello，我是侠客，有什么需要帮助的吗？</p>
+				</div>
+				<!--<div class="tuling">
+					<label><img src="img/app.png"/>侠客 :</label>
+					<p></p>
+				</div>
+				<div class="me">
+					<label>我:<img src="img/me.jpg"/></label>
+					<p></p>
+				</div>-->
+			</div>
+
+			<div class="shuru">
+				<input type="text" name="tex" id="tex" value="" />
+				<input type="button" name="btn" id="btn" value="发送" />
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$('#btn').on('touchstart', function() {
+			$.ajax({
+				type: "get",
+				url: "http://www.tuling123.com/openapi/api",
+				dataType: "JSON",
+				jsonP: "callback",
+				data: {
+					'key': 'b8680786b6714ae4953c72d6cde9c556',
+					'info': $('#tex').val(),
+					'userid': '12345678'
+				},
+				success: function(str) {
+					create(str.text, $('#tex').val());
+				}
+			});
+		});
+
+		function create(text, val, fn) {
+			var div1 = document.createElement('div');
+			div1.className = 'tuling';
+			var a = '<label><img src="img/app.png"/>侠客 :</label><p>' + text + '</p>';
+			div1.innerHTML = a;
+			var div2 = document.createElement('div');
+			div2.className = 'me';
+			var b = '<label>我:<img src="img/man.jpg"/></label><p>' + val + '</p>';
+			div2.innerHTML = b;
+			$('.talking').append(div2);
+			$('.talking').append(div1);
+			$('#tex').val('');
+		}
+	</script>
+
+</html>

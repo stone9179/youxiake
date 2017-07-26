@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="游侠客">
+		<meta name="description" content="游侠客">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-title" content="游侠客">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>个人中心-游侠客</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/information_style.css" />
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/information_style.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {
+				var html = document.documentElement;
+				var hwidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hwidth / 10 + 'px';
+			})();
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:;" id="back"></a>
+			<em>个人中心</em>
+			<a href="index.html"></a>
+		</header>
+
+		<section>
+			<ul>
+				<li>
+					<a href="">
+						<i></i><s>我的订单</s><u></u>
+					</a>
+				</li>
+				<li>
+					<a href="activity.html">
+						<i></i><s>我的留言评价</s><u></u>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i></i><s>常用旅客</s><u></u>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i></i><s>修改密码</s><u></u>
+					</a>
+				</li>
+				<li>
+					<a id="out">
+						<i class="last" ></i><s>退出登录</s><u></u>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+
+</html>

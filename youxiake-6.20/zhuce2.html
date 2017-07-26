@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="游侠客">
+		<meta name="description" content="游侠客">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-title" content="游侠客">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>登录2-游侠客</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuce2_style.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhuce2_style.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				var html = document.documentElement;
+				var hWidth= html.getBoundingClientRect().width;
+				html.style.fontSize=hWidth/10+'px';
+			})();
+		</script>
+	</head>
+	<body>
+		<section>
+			<form action="" method="post">
+				<dl>
+					<dt>性别</dt>
+					<dd><em>男</em><em>女</em></dd>
+				</dl>
+				<dl>
+					<dt>昵称</dt>
+					<dd><input id="name" type="text" placeholder="旅途中想让游侠怎么称呼你"/></dd>
+				</dl>
+				<dl>
+					<dt>常住地</dt>
+					<dd><input id="place" type="text" placeholder="寻找同城的你"/></dd>
+				</dl>
+				<input type="button" value="开启旅程" id="btn"/>
+			</form>
+			<span id="span">
+				<s>下载游侠客APP</s>
+				<i>看全世界美景，认识更多的旅行达人</i>
+			</span>
+			<div class="address">
+				<header><a href="####">取消</a><a href="####">确定</a></header>
+			</div>
+		</section>
+	</body>
+</html>
